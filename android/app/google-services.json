@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "376909813936",
+    "project_id": "school-library-lrn-2026",
+    "storage_bucket": "school-library-lrn-2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376909813936:android:e6df379126f64b7ec88375",
+        "android_client_info": {
+          "package_name": "com.example.library_system"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEXcwAjakSksvmBw99v08lAVGje5qN0zc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

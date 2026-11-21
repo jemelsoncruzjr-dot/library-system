@@ -69,7 +69,7 @@ class _ServiceTile extends StatelessWidget {
                 width: 42,
                 height: 42,
                 decoration: const BoxDecoration(
-                  color: Color(0x14124734),
+                  color: Color(0x140D58BB),
                   shape: BoxShape.circle,
                 ),
                 child: Icon(item.icon, color: AppColors.green, size: 22),

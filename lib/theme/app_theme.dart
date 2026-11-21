@@ -2,16 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppColors {
-  static const green = Color(0xFF124734);
-  static const greenDark = Color(0xFF0C3225);
-  static const brass = Color(0xFFB68A2E);
-  static const paper = Color(0xFFF3F4F1);
-  static const ink = Color(0xFF1B1F1D);
-  static const muted = Color(0xFF5E6762);
-  static const line = Color(0xFFD5D9D3);
+  static const green = Color(0xFF0D58BB);
+  static const greenDark = Color(0xFF0A3F8F);
+  static const brass = Color(0xFFE6A317);
+  static const paper = Color(0xFFFFF6E6);
+  static const ink = Color(0xFF2A1E14);
+  static const muted = Color(0xFF6B5E52);
+  static const line = Color(0xFFE8DCC6);
   static const danger = Color(0xFFB3261E);
   static const warning = Color(0xFF9A5B00);
   static const success = Color(0xFF1E7B4F);
+  static const logoTop = Color(0xFFFFC36B);
+  static const logoBottom = Color(0xFF3172EF);
+  static const brown = Color(0xFF3B1F0B);
 }
 
 class AppTheme {

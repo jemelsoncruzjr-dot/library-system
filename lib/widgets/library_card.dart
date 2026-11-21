@@ -152,7 +152,7 @@ class _RulePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = const Color(0x16124734)
+      ..color = const Color(0x160D58BB)
       ..strokeWidth = 1;
     for (double y = size.height * 0.36; y < size.height - 10; y += 22) {
       canvas.drawLine(Offset(16, y), Offset(size.width - 16, y), paint);

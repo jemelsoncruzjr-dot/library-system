@@ -59,7 +59,14 @@ class BrandMark extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = light ? Colors.white : AppColors.green;
+    final color = light ? AppColors.brown : AppColors.green;
+    final style = GoogleFonts.newsreader(
+      fontSize: 17,
+      height: 1.15,
+      fontWeight: FontWeight.w600,
+      color: color,
+    );
+
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -74,19 +81,21 @@ class BrandMark extends StatelessWidget {
         ),
         const SizedBox(width: 12),
         Flexible(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 190),
-            child: Text(
-              School.name,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              style: GoogleFonts.newsreader(
-                fontSize: 17,
-                height: 1.15,
-                fontWeight: FontWeight.w600,
-                color: color,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                alignment: Alignment.centerLeft,
+                child: Text(School.nameTop, maxLines: 1, style: style),
               ),
-            ),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                alignment: Alignment.centerLeft,
+                child: Text(School.nameBottom, maxLines: 1, style: style),
+              ),
+            ],
           ),
         ),
       ],
@@ -100,7 +109,19 @@ class _BrandPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: AppColors.green,
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            AppColors.logoTop,
+            AppColors.logoTop,
+            AppColors.logoBottom,
+            AppColors.logoBottom,
+          ],
+          stops: [0.0, 0.2, 0.7, 1.0],
+        ),
+      ),
       child: LayoutBuilder(
         builder: (context, constraints) {
           return SingleChildScrollView(
@@ -112,14 +133,14 @@ class _BrandPanel extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const BrandMark(light: true),
+                      const BrandMark(light: true, logoSize: 52),
                       const Spacer(),
                       Center(
                         child: Transform.rotate(
                           angle: -0.05,
                           child: ConstrainedBox(
-                            constraints: BoxConstraints(maxWidth: 380),
-                            child: LibraryCard(
+                            constraints: const BoxConstraints(maxWidth: 380),
+                            child: const LibraryCard(
                               name: 'Maria Santos',
                               lrn: '123456789012',
                               gradeSection: 'Grade 11 - Section A',
@@ -144,7 +165,7 @@ class _BrandPanel extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16,
                           height: 1.5,
-                          color: Color(0xCCFFFFFF),
+                          color: Colors.white,
                         ),
                       ),
                     ],
