@@ -1,5 +1,5 @@
 name: library_system
-description: "School library card validation system."
+description: "TGG-AklatTrack: library card validation and library services."
 publish_to: 'none'
 
 version: 1.0.0+1

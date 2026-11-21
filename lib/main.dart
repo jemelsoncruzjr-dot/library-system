@@ -20,7 +20,7 @@ class LibraryApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'School Library',
+      title: 'TGG-AklatTrack',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
       home: StreamBuilder<User?>(

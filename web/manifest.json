@@ -1,11 +1,11 @@
 {
-    "name": "Tomas Garcia Guinto Senior High School Library",
-    "short_name": "School Library",
+    "name": "TGG-AklatTrack",
+    "short_name": "TGG-AklatTrack",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#FFF6E6",
     "theme_color": "#0D58BB",
-    "description": "Library card validation and library services for Tomas Garcia Guinto Senior High School.",
+    "description": "Library card validation and library services for Tomas Garcia Guintu Senior High School.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
