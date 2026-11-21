@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "public": "build/web",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [{ "source": "**", "destination": "/index.html" }]
+  },
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "school-library-lrn-2026",
+          "configurations": {
+            "web": "1:376909813936:web:82b083e7151700bfc88375"
+          }
+        }
+      }
+    }
+  }
+}
