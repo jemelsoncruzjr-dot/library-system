@@ -1,1 +1,25 @@
-{"hosting":{"public":"build/web","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]},"flutter":{"platforms":{"dart":{"lib/firebase_options.dart":{"projectId":"school-library-lrn-2026","configurations":{"android":"1:376909813936:android:e6df379126f64b7ec88375","web":"1:376909813936:web:82b083e7151700bfc88375"}}},"android":{"default":{"projectId":"school-library-lrn-2026","appId":"1:376909813936:android:e6df379126f64b7ec88375","fileOutput":"android/app/google-services.json"}}}}}
+{
+  "hosting": {
+    "public": "build/web",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [{ "source": "**", "destination": "/index.html" }],
+    "headers": [
+      {
+        "source": "/@(index.html|flutter_bootstrap.js|flutter_service_worker.js|version.json|manifest.json)",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+      }
+    ]
+  },
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "school-library-lrn-2026",
+          "configurations": {
+            "web": "1:376909813936:web:82b083e7151700bfc88375"
+          }
+        }
+      }
+    }
+  }
+}
